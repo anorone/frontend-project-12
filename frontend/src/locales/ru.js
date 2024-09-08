@@ -115,6 +115,7 @@ export default {
             label: 'Введите сообщение...',
           },
         },
+        submit: 'Отправить',
       },
     },
     buttons: {
@@ -124,6 +125,7 @@ export default {
       addChannel: '+',
       editChannel: 'Переименовать',
       removeChannel: 'Удалить',
+      channelMenu: 'Управление каналом',
     },
     errors: {
       401: 'Неверные имя пользователя или пароль',
