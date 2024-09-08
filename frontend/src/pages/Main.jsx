@@ -8,7 +8,6 @@ import Tab from 'react-bootstrap/Tab';
 import Button from 'react-bootstrap/Button';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import Dropdown from 'react-bootstrap/Dropdown';
-import { PlusSquare } from 'react-bootstrap-icons';
 import { Chat } from '#components';
 import { AddChannelModal, RemoveChannelModal, EditChannelModal } from '#components/modals';
 import { useGetChannelsQuery } from '#store/apiSlice';
@@ -81,12 +80,12 @@ const Main = () => {
             <div className="d-flex justify-content-between align-items-center py-4 px-2">
               <h2 className="m-0 fs-6">{t('channels.title')}</h2>
               <Button
-                className="p-0 lh-1"
+                className="px-1 py-0 border border-2 border-primary rounded-0 text-primary lh-1 text-decoration-none"
                 variant="link"
                 type="button"
                 onClick={() => openModal('addition')}
               >
-                <PlusSquare size={20} />
+                {t('buttons.addChannel')}
               </Button>
             </div>
             <Nav as="ul" className="flex-grow-1 flex-column flex-nowrap pb-3 pe-2 overflow-y-auto">

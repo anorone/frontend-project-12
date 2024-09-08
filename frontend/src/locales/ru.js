@@ -1,6 +1,6 @@
 export default {
   translation: {
-    brandName: 'Slack',
+    brandName: 'Hexlet Chat',
     statuses: {
       loading: 'Загрузка...',
     },
@@ -78,7 +78,7 @@ export default {
       addChannel: {
         fields: {
           name: {
-            label: 'Название канала',
+            label: 'Имя канала',
             errors: {
               required: 'Обязательное поле',
               min: 'От 3 до 20 символов',
@@ -93,7 +93,7 @@ export default {
       editChannel: {
         fields: {
           name: {
-            label: 'Название канала',
+            label: 'Имя канала',
             errors: {
               required: 'Обязательное поле',
               min: 'От 3 до 20 символов',
@@ -121,13 +121,14 @@ export default {
       logOut: 'Выйти',
       goHome: 'Вернуться на главную',
       goBack: 'Назад',
+      addChannel: '+',
       editChannel: 'Переименовать',
       removeChannel: 'Удалить',
     },
     errors: {
-      401: 'Неверный никнейм и/или пароль',
+      401: 'Неверные имя пользователя или пароль',
       409: 'Такой пользователь уже существует',
-      default: 'Произошла ошибка. Попробуйте снова',
+      default: 'Ошибка соединения. Попробуйте снова',
     },
     warnings: {
       general: 'Что-то пошло не так...',
