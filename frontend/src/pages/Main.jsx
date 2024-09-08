@@ -99,7 +99,8 @@ const Main = () => {
                           variant={shouldChannelBeHighlighted(channel.id, i) ? 'secondary' : 'light'}
                           onClick={() => switchChannel(channel.id)}
                         >
-                          {`# ${channel.name}`}
+                          <span className="me-1">#</span>
+                          {channel.name}
                         </Button>
                         <Dropdown.Toggle
                           id={`${channel.name}-dropdown-toggle`}
@@ -124,7 +125,8 @@ const Main = () => {
                         variant={shouldChannelBeHighlighted(channel.id, i) ? 'secondary' : 'light'}
                         onClick={() => switchChannel(channel.id)}
                       >
-                        {`# ${channel.name}`}
+                        <span className="me-1">#</span>
+                        {channel.name}
                       </Button>
                     )}
                 </Nav.Item>
