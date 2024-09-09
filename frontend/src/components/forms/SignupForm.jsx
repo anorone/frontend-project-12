@@ -1,6 +1,8 @@
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { Formik, Form as FormikForm, Field, ErrorMessage } from 'formik';
+import {
+  Formik, Form as FormikForm, Field, ErrorMessage,
+} from 'formik';
 import { object, string } from 'yup';
 import { toast } from 'react-toastify';
 import Form from 'react-bootstrap/Form';
@@ -68,7 +70,9 @@ const SignupForm = () => {
       validateOnChange={false}
       onSubmit={onSubmit}
     >
-      {({ errors, touched, isSubmitting, status }) => (
+      {({
+        errors, touched, isSubmitting, status,
+      }) => (
         <FormikForm className="d-grid gap-2" noValidate>
           <FloatingLabel controlId="username" label={t('forms.signUp.fields.name.label')}>
             <Form.Control

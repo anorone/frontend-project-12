@@ -1,13 +1,17 @@
 import { useEffect, useMemo, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Formik, Form as FormikForm, Field, ErrorMessage } from 'formik';
+import {
+  Formik, Form as FormikForm, Field, ErrorMessage,
+} from 'formik';
 import { object, string } from 'yup';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import { useGetChannelsQuery, useEditChannelMutation } from '#store/apiSlice';
 import { filter } from '#helpers';
 
-const EditChannelForm = ({ channel, onReset, onSuccess, onFailure }) => {
+const EditChannelForm = ({
+  channel, onReset, onSuccess, onFailure,
+}) => {
   const { data: channels } = useGetChannelsQuery();
   const [editChannel] = useEditChannelMutation();
   const { t } = useTranslation();

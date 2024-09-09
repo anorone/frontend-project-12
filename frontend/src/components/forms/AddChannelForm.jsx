@@ -1,6 +1,8 @@
 import { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Formik, Form as FormikForm, Field, ErrorMessage } from 'formik';
+import {
+  Formik, Form as FormikForm, Field, ErrorMessage,
+} from 'formik';
 import { object, string } from 'yup';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';

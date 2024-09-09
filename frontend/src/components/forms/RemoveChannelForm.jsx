@@ -3,7 +3,9 @@ import { Formik, Form } from 'formik';
 import Button from 'react-bootstrap/Button';
 import { useRemoveChannelMutation } from '#store/apiSlice';
 
-const RemoveChannelForm = ({ channelId, onReset, onSuccess, onFailure }) => {
+const RemoveChannelForm = ({
+  channelId, onReset, onSuccess, onFailure,
+}) => {
   const [removeChannel] = useRemoveChannelMutation();
   const { t } = useTranslation();
 

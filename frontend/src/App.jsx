@@ -7,7 +7,9 @@ import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Button from 'react-bootstrap/Button';
 import { selectAuthData, clearAuthData } from '#store/authSlice';
-import { Main, Login, Signup, NotFound } from '#pages';
+import {
+  Main, Login, Signup, NotFound,
+} from '#pages';
 import { ToastBox } from '#components';
 import { routes, storage } from '#constants';
 import ErrorBoundary from './ErrorBoundary';
