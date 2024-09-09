@@ -112,7 +112,8 @@ export default {
       chat: {
         fields: {
           msg: {
-            label: 'Введите сообщение...',
+            sample: 'Введите сообщение...',
+            label: 'Новое сообщение',
           },
         },
         submit: 'Отправить',

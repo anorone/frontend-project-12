@@ -70,7 +70,8 @@ const NewMessageForm = ({ channelId }) => {
                 as={Field}
                 type="text"
                 name="message"
-                placeholder={t('forms.chat.fields.msg.label')}
+                placeholder={t('forms.chat.fields.msg.sample')}
+                aria-label={t('forms.chat.fields.msg.label')}
                 autoComplete="off"
                 autoFocus
               />
