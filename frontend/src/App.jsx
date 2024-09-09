@@ -32,11 +32,9 @@ const App = () => {
           <header className="z-1 shadow-sm">
             <Container>
               <Navbar>
-                <h1 style={{ all: 'unset' }}>
-                  <Navbar.Brand as={Link} to={routes.root()}>
-                    {t('brandName')}
-                  </Navbar.Brand>
-                </h1>
+                <Navbar.Brand as={Link} to={routes.root()}>
+                  <h1 style={{ all: 'unset' }}>{t('brandName')}</h1>
+                </Navbar.Brand>
                 {token && (
                   <Button className="ms-auto" onClick={logOut}>
                     {t('buttons.logOut')}
