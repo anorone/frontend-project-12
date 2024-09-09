@@ -95,7 +95,7 @@ const Main = () => {
                     ? (
                       <Dropdown as={ButtonGroup} className="w-100" align="end">
                         <Button
-                          className="w-100 text-start rounded-0 text-truncate"
+                          className="w-100 rounded-0 text-start text-truncate"
                           variant={shouldChannelBeHighlighted(channel.id, i) ? 'secondary' : 'light'}
                           onClick={() => switchChannel(channel.id)}
                         >
@@ -120,7 +120,7 @@ const Main = () => {
                     )
                     : (
                       <Button
-                        className="w-100 text-start rounded-0 text-truncate"
+                        className="w-100 rounded-0 text-start text-truncate"
                         variant={shouldChannelBeHighlighted(channel.id, i) ? 'secondary' : 'light'}
                         onClick={() => switchChannel(channel.id)}
                       >
