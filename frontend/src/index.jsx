@@ -23,7 +23,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
-    <RollbarProvider instance={rollbar}>
+    <RollbarProvider config={rollbarConfig}>
       <Provider store={store}>
         <I18nextProvider i18n={i18next}>
           <App />
